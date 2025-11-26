@@ -7,21 +7,21 @@ const inter = Inter({ subsets: ["latin"] });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Laboratory Needs Solutions',
+  title: 'Laboratory Needs Solutions Limited',
   description: 'Professional laboratory equipment, supplies, and solutions for research and industry',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/Laboratory Needs logo (1)_page-0001.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/Laboratory Needs logo (1)_page-0001.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/Laboratory Needs logo (1)_page-0001.png',
         type: 'image/svg+xml',
       },
     ],
