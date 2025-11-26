@@ -44,22 +44,22 @@ export default function Contact() {
             {
               icon: <MapPin className="w-8 h-8" />,
               title: "Office Address",
-              content: "123 Laboratory Street\nTech City, TC 12345\nUnited States",
+              content: "Plot 212 Nsalo Road, Old Kampala\nP.O Box 10341 Kampala, Uganda",
             },
             {
               icon: <Phone className="w-8 h-8" />,
               title: "Phone",
-              content: "Main: +1 (555) 123-4567\nSupport: +1 (555) 987-6543",
+              content: "+256392916565\n+256392177199",
             },
             {
               icon: <Mail className="w-8 h-8" />,
               title: "Email",
-              content: "info@lnsl.com\nsupport@lnsl.com",
+              content: "labneedssolution@gmail.com",
             },
             {
               icon: <Clock className="w-8 h-8" />,
               title: "Business Hours",
-              content: "Mon - Fri: 8:00 AM - 6:00 PM\nSat - Sun: 9:00 AM - 2:00 PM",
+              content: "Mon - Fri: 8:00 AM - 5:00 PM\nSat : 9:00 AM - 12:00 PM",
             },
           ].map((item, idx) => (
             <div key={idx} className="bg-card border border-border rounded-lg p-6">
@@ -111,7 +111,7 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+256 7xxxxxxxx"
                   />
                 </div>
                 <div>
@@ -159,14 +159,14 @@ export default function Contact() {
       {/* Map Section */}
       <div className="mt-16 bg-secondary rounded-lg overflow-hidden h-96">
         <iframe
-          src="https://maps.app.goo.gl/B8uJuctzCdyo6YAd6"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7524657763384!2d32.563131575323894!3d0.3174259997563847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb6187aebad5%3A0xdbac5e1eb023d378!2s212%20Nsalo%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1699800000000!5m2!1sen!2sus"
           width="100%"
           height="100%"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Laboratory Needs Solutions Location"
+          title="Laboratory Needs Solutions Location - 212 Nsalo Rd, Kampala, Uganda"
         />
       </div>
     </div>

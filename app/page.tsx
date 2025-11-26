@@ -1,13 +1,14 @@
 "use client"
 
 import { useState } from "react"
-import Navigation from "@/components/navigation"
-import Home from "@/components/pages/home"
-import AboutUs from "@/components/pages/about-us"
-import Products from "@/components/pages/products"
-import CustomerServices from "@/components/pages/customer-services"
-import Contact from "@/components/pages/contact"
-import Footer from "@/components/footer"
+import Navigation from "../components/navigation"
+import Home from "../components/pages/home"
+import About from "../components/pages/about-us"
+import Products from "../components/pages/products"
+import CustomerServices from "../components/pages/customer-services"
+import Contact from "../components/pages/contact"
+import Footer from "../components/footer"
+import PageTransition from "../components/page-transition"
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home")
@@ -17,7 +18,7 @@ export default function App() {
       case "home":
         return <Home setCurrentPage={setCurrentPage} />
       case "about":
-        return <AboutUs />
+        return <About />
       case "products":
         return <Products />
       case "services":
@@ -25,14 +26,16 @@ export default function App() {
       case "contact":
         return <Contact />
       default:
-        return <Home />
+        return <Home setCurrentPage={setCurrentPage} />
     }
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <main className="flex-1">{renderPage()}</main>
+      <PageTransition currentPage={currentPage}>
+        {renderPage()}
+      </PageTransition>
       <Footer setCurrentPage={setCurrentPage} />
     </div>
   )
