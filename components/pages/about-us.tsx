@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Users, Target, Award, Heart, Handshake, TrendingUp, CheckCircle, Lightbulb, Eye, Building2, Truck, Globe, Beaker, Stethoscope, Sparkles, ArrowRight, MapPin, Calendar, GraduationCap, Wrench, Shield } from "lucide-react"
+import { Users, Target, Award, Heart, Handshake, TrendingUp, CheckCircle, Lightbulb, Eye, Building2, Truck, Globe, Beaker, Stethoscope, Sparkles, ArrowRight, MapPin, Calendar, GraduationCap, Wrench, Shield, Smile, BarChart3, Share2, FileCheck, Megaphone, Gift, HeartHandshake, MonitorPlay, Presentation } from "lucide-react"
 
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false)
@@ -60,50 +60,95 @@ export default function AboutUs() {
 
   const services = [
     {
-      title: "Equipment Supply",
-      description: "Trusted distributors of laboratory reagents and instruments, medical and hospital equipment, and related consumables serving hospitals, universities, and technological institutes.",
-      icon: <Truck className="w-10 h-10" />,
+      title: "•	Partner with selling brands and distributorship agreements ",
+      
+      icon: <Award className="w-10 h-10" />,
       gradient: "from-blue-600 via-cyan-600 to-teal-600"
     },
     {
-      title: "Equipment Servicing & Repairs",
-      description: "Professional maintenance, calibration, and repair services for laboratory and medical equipment to ensure optimal performance and longevity.",
-      icon: <Wrench className="w-10 h-10" />,
+      title: "•	Satisfy our customer",
+      
+      icon: <Smile className="w-10 h-10" />,
       gradient: "from-green-600 via-emerald-600 to-teal-600"
     },
     {
-      title: "Training Programs",
-      description: "Comprehensive training programs in various health-related fields to empower healthcare professionals and laboratory technicians with essential skills.",
-      icon: <GraduationCap className="w-10 h-10" />,
+      title: "•	Increase the marketing and sales  department  to double the annual sales ",
+    
+      icon: <TrendingUp className="w-10 h-10" />,
       gradient: "from-purple-600 via-violet-600 to-indigo-600"
     },
     {
-      title: "Strategic Partnership",
-      description: "Door to door delivery, chain marketing, contracts, media adverts, promotional activities, digital marketing, donations, exhibitions and training programs.",
-      icon: <Handshake className="w-10 h-10" />,
+      title: "•	Increase the market share",
+     
+      icon: <BarChart3 className="w-10 h-10" />,
       gradient: "from-orange-600 via-red-600 to-pink-600"
     },
   ]
 
   const capacities = [
     {
-      title: "Expert Team",
-      description: "Highly energetic and experienced team of medical professionals, laboratory scientists, procurement and supply chain controllers, bio-med engineers, quality assurance experts and marketing and sales team.",
-      icon: <Users className="w-10 h-10" />,
-      gradient: "from-blue-600 via-purple-600 to-indigo-600"
-    },
-    {
-      title: "Infrastructure",
-      description: "Warehouse for storage purpose, cold storage, transport vans and delivery trucks, service center, internet and stable electric supply.",
-      icon: <Building2 className="w-10 h-10" />,
-      gradient: "from-emerald-600 via-teal-600 to-cyan-600"
-    },
-    {
-      title: "Global Partnerships",
-      description: "International business partners and adequate financial resources to support our operations and growth.",
-      icon: <Globe className="w-10 h-10" />,
-      gradient: "from-orange-600 via-red-600 to-pink-600"
-    },
+    title: "Door to Door Delivery",
+    description:
+      "A dedicated team ensuring direct delivery of equipment and supplies to clients efficiently and on time.",
+    icon: <Users className="w-10 h-10" />,
+    gradient: "from-blue-600 via-purple-600 to-indigo-600"
+  },
+  {
+    title: "Chain Marketing",
+    description:
+      "Expanding reach through structured networks, warehouses, distribution points, and coordinated logistics.",
+    icon: <Share2 className="w-10 h-10" />,
+    gradient: "from-emerald-600 via-teal-600 to-cyan-600"
+  },
+  {
+    title: "Contracts",
+    description:
+      "Engaging in long-term supply agreements with institutions, government agencies, and private organizations.",
+    icon: <FileCheck className="w-10 h-10" />,
+    gradient: "from-orange-600 via-red-600 to-pink-600"
+  },
+  {
+    title: "Media Adverts",
+    description:
+      "Promoting products and services through radio, TV, newspapers, and targeted media platforms.",
+    icon: <Megaphone className="w-10 h-10" />,
+    gradient: "from-pink-600 via-red-600 to-orange-600"
+  },
+  {
+    title: "Promotional Activities",
+    description:
+      "Running promotions, special offers, and awareness drives to strengthen brand visibility and customer engagement.",
+    icon: <Gift className="w-10 h-10" />,
+    gradient: "from-amber-600 via-yellow-600 to-orange-600"
+  },
+  {
+    title: "Strategic Partnerships",
+    description:
+      "Building mutually beneficial collaborations with manufacturers, distributors, and healthcare institutions.",
+    icon: <Handshake className="w-10 h-10" />,
+    gradient: "from-purple-600 via-indigo-600 to-blue-600"
+  },
+  {
+    title: "Donations",
+    description:
+      "Contributing medical and laboratory supplies to communities and institutions as part of corporate social responsibility.",
+    icon: <HeartHandshake className="w-10 h-10" />,
+    gradient: "from-rose-600 via-pink-600 to-red-600"
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "Leveraging online channels such as social media, email campaigns, and digital advertisements to reach a wider audience.",
+    icon: <MonitorPlay className="w-10 h-10" />,
+    gradient: "from-indigo-600 via-cyan-600 to-blue-600"
+  },
+  {
+    title: "Exhibitions and Trainings",
+    description:
+      "Participating in trade fairs, medical conferences, and organizing skill-based training programs for clients.",
+    icon: <Presentation className="w-10 h-10" />,
+    gradient: "from-teal-600 via-green-600 to-emerald-600"
+  }
   ]
 
   const clientTypes = [
@@ -174,9 +219,9 @@ export default function AboutUs() {
           
           <div className="flex justify-center gap-4 mt-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-900">
             {[
-              { number: "15+", label: "Years Experience" },
+              { number: "16+", label: "Years Experience" },
               { number: "500+", label: "Happy Clients" },
-              { number: "1000+", label: "Products" },
+              { number: "100+", label: "Products" },
               { number: "East Africa", label: "Regional Leader" }
             ].map((stat, idx) => (
               <div key={idx} className="bg-white/15 backdrop-blur-md rounded-lg px-6 py-3 border border-white/25 hover:bg-white/20 hover:border-white/35 hover:scale-110 hover:-translate-y-2 transition-all duration-500 cursor-pointer group shadow-lg hover:shadow-xl">
@@ -328,9 +373,9 @@ export default function AboutUs() {
           {/* Enhanced Services Section */}
           <div>
             <div className="text-center mb-16 animate-in fade-in slide-in-from-top duration-700 delay-400">
-              <h3 className="text-4xl font-bold text-primary mb-4 hover:text-accent transition-colors duration-500">Our Comprehensive Services</h3>
+              <h3 className="text-4xl font-bold text-primary mb-4 hover:text-accent transition-colors duration-500">Targeted Achievement</h3>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto hover:text-foreground transition-colors duration-300">
-                Beyond supply - we provide complete healthcare solutions including servicing, repairs, and training
+                Strategically advancing our partnerships, service quality, and market expansion to deliver reliable, innovative healthcare and laboratory solutions.
               </p>
               <div className="w-32 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mt-4 rounded-full hover:w-40 hover:h-2 transition-all duration-500"></div>
             </div>
@@ -364,9 +409,7 @@ export default function AboutUs() {
                     <h4 className="text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300 mb-4 group-hover:scale-105 transform">
                       {service.title}
                     </h4>
-                    <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300 leading-relaxed text-sm group-hover:scale-105 transform">
-                      {service.description}
-                    </p>
+                    
                     
                     {/* Service number indicator */}
                     <div className="absolute top-4 right-4 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-125 transition-all duration-300">
@@ -436,9 +479,9 @@ export default function AboutUs() {
           {/* Enhanced Capacity Section */}
           <div>
             <div className="text-center mb-16 animate-in fade-in slide-in-from-top duration-700 delay-1200">
-              <h3 className="text-4xl font-bold text-primary mb-4 hover:text-accent transition-colors duration-500">Our Capacity & Infrastructure</h3>
+              <h3 className="text-4xl font-bold text-primary mb-4 hover:text-accent transition-colors duration-500">Market Strategies</h3>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto hover:text-foreground transition-colors duration-300">
-                World-class facilities and expertise to serve your laboratory and healthcare needs across East Africa
+                Strategic marketing actions that elevate our brand, strengthen regional partnerships, and accelerate growth in the East African healthcare ecosystem.
               </p>
               <div className="w-32 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mt-4 rounded-full hover:w-40 hover:h-2 transition-all duration-500"></div>
             </div>

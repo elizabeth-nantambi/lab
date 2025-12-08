@@ -12,9 +12,10 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
 
   const navItems = [
     { id: "home", label: "Home" },
-    { id: "about", label: "About Us" },
+    { id: "about", label: "Who We Are" },
     { id: "products", label: "Products" },
     { id: "services", label: "Customer Services" },
+    { id: "quick-ordering", label: "Quick Ordering" },
     { id: "contact", label: "Contact Us" },
   ]
 
