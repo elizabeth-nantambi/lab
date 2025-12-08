@@ -136,9 +136,9 @@ export default function Home({ setCurrentPage }: HomeProps) {
             <span className="text-sm font-medium">Trusted Healthcare Solutions Since 2009</span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 transform transition-all duration-1000 delay-300 animate-in fade-in slide-in-from-top bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-accent">
-            Trusted Supplier of Quality Affordable Healthcare Solutions
-          </h1>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 transform transition-all duration-1000 delay-300 animate-in fade-in slide-in-from-top bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-accent">
+            Welcome to Laboratory Needs Solutions Limited
+          </h2>
           
           <p className="text-xl opacity-95 mb-6 max-w-3xl mx-auto transform transition-all duration-1000 delay-600 animate-in fade-in slide-in-from-bottom leading-relaxed">
             Delivering superior laboratory equipment, medical devices, and complete diagnostic
