@@ -9,6 +9,7 @@ import CustomerServices from "../components/pages/customer-services"
 import Contact from "../components/pages/contact"
 import Footer from "../components/footer"
 import PageTransition from "../components/page-transition"
+import QuickOrdering from "@/components/pages/quick-ordering"
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home")
@@ -23,6 +24,8 @@ export default function App() {
         return <Products />
       case "services":
         return <CustomerServices />
+        case "quick-ordering":  // ADD THIS CASE
+        return <QuickOrdering />
       case "contact":
         return <Contact />
       default:
