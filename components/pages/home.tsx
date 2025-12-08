@@ -137,7 +137,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-4 transform transition-all duration-1000 delay-300 animate-in fade-in slide-in-from-top bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-accent">
-            Welcome to Laboratory Needs Solutions Limited
+            Welcome  to Laboratory Needs Solutions Limited
           </h2>
           
           <p className="text-xl opacity-95 mb-6 max-w-3xl mx-auto transform transition-all duration-1000 delay-600 animate-in fade-in slide-in-from-bottom leading-relaxed">
@@ -345,13 +345,13 @@ export default function Home({ setCurrentPage }: HomeProps) {
                 icon: <Users className="w-8 h-8" />
               },
               { 
-                number: "1000+", 
+                number: "100+", 
                 label: "Quality Products",
                 description: "Laboratory supplies available",
                 icon: <Package className="w-8 h-8" />
               },
               { 
-                number: "15+", 
+                number: "16+", 
                 label: "Years of Excellence",
                 description: "Industry experience",
                 icon: <Award className="w-8 h-8" />
