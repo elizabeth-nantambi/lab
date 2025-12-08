@@ -37,6 +37,11 @@ export default function Home({ setCurrentPage }: HomeProps) {
 
   const featuredProducts = [
     {
+      name: "Laboratory Glassware",
+      image: "https://plus.unsplash.com/premium_photo-1661601679321-033fbcd5a1e5?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "Lab Supplies",
+    },
+    {
       name: "Digital Microscopes",
       image: "https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "Laboratory Equipment",
@@ -46,11 +51,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
       image: "https://images.unsplash.com/photo-1630128295920-627fb9aff5a4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "Medical Devices",
     },
-    {
-      name: "Laboratory Glassware",
-      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      category: "Lab Supplies",
-    },
+    
   ]
 
   return (
